@@ -9,6 +9,7 @@ public class Main
         checker.classPath( Main.class.getClassLoader() );
         checker.includePackages( "com.moowork.apirules.sample" );
 
+
         /*
         for ( final Violation violation : checker.check() )
         {

@@ -31,13 +31,9 @@ public final class Violations
         return this;
     }
 
-    public Violations addAll( final Iterable<Violation> violations )
+    public Violations addAll( final Violations violations )
     {
-        for ( final Violation violation : violations )
-        {
-            this.list.add( violation );
-        }
-
+        this.list.addAll( violations.list );
         return this;
     }
 }
